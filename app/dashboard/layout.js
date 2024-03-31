@@ -1,5 +1,7 @@
+import { Navbar, Sidebar } from "../ui";
+
 export const metadata = {
-  title: "Lama Dev Next.js Admin Dashboard",
+  title: "Admin Dashboard",
   description: "Next.js Tutorial",
 };
 
@@ -7,8 +9,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <h1>Hanuman</h1> */}
-        {children}
+        <div className="flex flex-row gap-4">
+          <section className="bg-secondary p-4 w-72 h-screen">
+            <Sidebar />
+          </section>
+          <section className="flex-1">
+            <nav className="bg-secondary p-4 m-4 rounded-md">
+              <Navbar />
+            </nav>
+            <main className="m-4">{children}</main>
+          </section>
+        </div>
       </body>
     </html>
   );
