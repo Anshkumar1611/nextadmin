@@ -1,4 +1,4 @@
-import { Navbar, Sidebar } from "../ui";
+import { Footer, Navbar, Sidebar } from "../ui";
 
 export const metadata = {
   title: "Admin Dashboard",
@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="flex flex-row gap-4">
-          <section className="bg-secondary p-4 w-72 h-screen">
+          <section className="bg-secondary p-4 w-72 h-screen sticky top-0">
             <Sidebar />
           </section>
           <section className="flex-1">
@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
               <Navbar />
             </nav>
             <main className="m-4">{children}</main>
+            <Footer />
           </section>
         </div>
       </body>

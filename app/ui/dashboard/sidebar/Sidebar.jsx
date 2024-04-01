@@ -2,10 +2,9 @@ import Link from "next/link";
 import { MenuLink, Profile } from "../..";
 import { menuItems } from "@/app/utils/data";
 
-
 const Sidebar = () => {
   return (
-    <div>
+    <div >
       <Profile />
       {menuItems.map((item) => (
         <div key={item.title} className="my-8">
