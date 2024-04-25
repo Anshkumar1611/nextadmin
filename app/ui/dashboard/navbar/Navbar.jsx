@@ -1,5 +1,4 @@
 "use client";
-
 import { navItems } from "@/app/utils/data";
 import { usePathname } from "next/navigation";
 import { Search } from "../..";

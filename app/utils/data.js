@@ -112,6 +112,22 @@ export const dashboardCards = [
 ];
 
 export const tableHeadings = ["Name", "Status", "Date", "Amount"];
+export const usersTableHeadings = [
+  "Name",
+  "Email",
+  "Created At",
+  "Role",
+  "status",
+  "Action",
+];
+export const productsTableHeadings = [
+  "Title",
+  "Description",
+  "Price",
+  "Created At",
+  "Stock",
+  "Action",
+];
 
 export const transactions = [
   {

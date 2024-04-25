@@ -1,11 +1,15 @@
+"use server"
 import Link from "next/link";
 import { MenuLink, Profile } from "../..";
 import { menuItems } from "@/app/utils/data";
+import { auth } from "@/app/auth";
+import Logout from "../../common/button/Logout";
 
-const Sidebar = () => {
+const Sidebar = async () => {
+  const { user } = await auth();
   return (
-    <div >
-      <Profile />
+    <div>
+      <Profile user={user} />
       {menuItems.map((item) => (
         <div key={item.title} className="my-8">
           <p className="text-xs">{item.title}</p>
@@ -18,6 +22,7 @@ const Sidebar = () => {
           ))}
         </div>
       ))}
+      <Logout />
     </div>
   );
 };

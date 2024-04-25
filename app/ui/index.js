@@ -7,3 +7,8 @@ export { default as Rightbar } from "./dashboard/rightbar/Rightbar.jsx";
 export { default as Transactions } from "./dashboard/transactions/Transactions.jsx";
 export { default as Footer } from "./dashboard/footer/Footer.jsx";
 export { default as Search } from "./common/search/Search.jsx";
+export { default as MainButton } from "./common/button/MainButton.jsx";
+export { default as Pagination } from "./common/pagination/Pagination.jsx";
+export { default as FormButton } from "./common/button/FormButton.jsx";
+export { default as SingleProductForm } from "./common/forms/SingleProductForm.jsx";
+export { default as LoginForm } from "./common/forms/LoginForm.jsx";

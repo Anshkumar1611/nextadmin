@@ -21,5 +21,10 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    'bg-pending',
+    'bg-done',
+    'bg-cancelled'
+  ],
   plugins: [],
 };
